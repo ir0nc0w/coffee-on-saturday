@@ -13,7 +13,17 @@ repositories {
 }
 
 dependencies {
+	// https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-thymeleaf
+	implementation("org.springframework.boot:spring-boot-starter-thymeleaf:2.7.3")
+	implementation("org.springframework.boot:spring-boot-starter-web")
+
 	implementation 'org.springframework.boot:spring-boot-starter'
+
+	//YouTube Data API v3
+    //compile 'com.google.oauth-client:google-oauth-client-jetty:1.23.0'
+    //compile 'com.google.apis:google-api-services-youtube:v3-rev222-1.25.0'
+	//compile 'com.google.api-client:google-api-client:1.30.9'
+
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 

@@ -1,0 +1,16 @@
+<p th:text="'test: ' + ${test}">test</p>
+
+
+<iframe width="879" height="504" id="myIframe" allow="autoplay">
+  <p>Your browser does not support iframes.</p>
+</iframe>
+
+<script th:inline="javascript">
+    //var par = ${test};
+    
+    //var par = 'B9VRvOKKwfs';
+    document.getElementById('myIframe').src="https://www.youtube.com/embed/"+[[${test}]];
+    //document.getElementById('myIframe').src="'https://www.youtube.com/embed/'+${test}";
+</script>
+
+
