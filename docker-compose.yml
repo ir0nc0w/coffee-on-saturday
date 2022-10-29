@@ -1,0 +1,16 @@
+version: "3"
+services:
+  mongodb:
+    image: mongo
+    container_name: demo-db
+    ports:
+      - ":27017"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: demo
+      MONGO_INITDB_ROOT_PASSWORD: demo
+      MONGO_INITDB_DATABASE: demo
+  demo:
+    build: .
+    container_name: demo
+    ports:
+      - "8080:8080"
